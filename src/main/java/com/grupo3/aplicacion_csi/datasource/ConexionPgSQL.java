@@ -12,7 +12,7 @@ public class ConexionPgSQL implements IConexion {
 
     public Connection getConexion() {
         try {
-            if(ConexionPgSQL.conn == null || !ConexionPgSQL.conn.isClosed()){
+            if(ConexionPgSQL.conn == null || ConexionPgSQL.conn.isClosed()){
                 Properties props = new Properties();
                 props.setProperty("user", USUARIO);
                 props.setProperty("password", PASSWORD);
