@@ -17,7 +17,7 @@ public class TipoObraDAO {
     }
 
     public long create(TipoObra tipoObra){
-        String sql = "INSERT INTO tipo_obra (nombre, descripcion, estado) VALUES (?, ?, ?)";
+        String sql = "INSERT INTO gestionTerreno.tipo_obra (nombre, descripcion, estado) VALUES (?, ?, ?)";
 
         try(Connection cn = conexion.getConexion(); PreparedStatement ps = cn.prepareStatement(sql)) {
             ps.setString(1, tipoObra.getNombre());
@@ -41,7 +41,7 @@ public class TipoObraDAO {
     }
 
     public void update(TipoObra tipoObra){
-        String sql = "UPDATE tipo_obra SET nombre = ?, descripcion = ?, estado = ? WHERE id_tipo_obra = ?";
+        String sql = "UPDATE gestionTerreno.tipo_obra SET nombre = ?, descripcion = ?, estado = ? WHERE id_tipo_obra = ?";
         try(Connection cn = conexion.getConexion(); PreparedStatement ps = cn.prepareStatement(sql)) {
             ps.setString(1, tipoObra.getNombre());
             ps.setString(2, tipoObra.getDescripcion());
@@ -54,7 +54,7 @@ public class TipoObraDAO {
     }
 
     public boolean delete(long idTipoObra){
-        String sql = "DELETE FROM tipo_obra WHERE id_tipo_obra = ?";
+        String sql = "DELETE FROM gestionTerreno.tipo_obra WHERE id_tipo_obra = ?";
         try(Connection cn = conexion.getConexion(); PreparedStatement ps = cn.prepareStatement(sql)) {
             ps.setLong(1, idTipoObra);
             int affectedRows = ps.executeUpdate();
@@ -68,7 +68,7 @@ public class TipoObraDAO {
     }
 
     public TipoObra findOne(long idTipoObra){
-        String sql = "SELECT * FROM tipo_obra WHERE id_tipo_obra = ?";
+        String sql = "SELECT * FROM gestionTerreno.tipo_obra WHERE id_tipo_obra = ?";
         TipoObra tipoObra = new TipoObra();
         try(Connection cn = conexion.getConexion(); PreparedStatement ps = cn.prepareStatement(sql)) {
             ps.setLong(1, idTipoObra);
@@ -87,7 +87,7 @@ public class TipoObraDAO {
 
     public List<TipoObra> get(){
         List<TipoObra> tipoObras = new ArrayList<>();
-        String sql = "SELECT * FROM tipo_obra";
+        String sql = "SELECT * FROM gestionTerreno.tipo_obra";
         try(Connection cn = conexion.getConexion(); Statement st = cn.createStatement(); ResultSet rs = st.executeQuery(sql)) {
             while (rs.next()){
                 TipoObra tipoObra = new TipoObra();
