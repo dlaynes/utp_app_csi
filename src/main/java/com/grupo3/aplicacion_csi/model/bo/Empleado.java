@@ -1,14 +1,14 @@
 package com.grupo3.aplicacion_csi.model.bo;
 
+import java.util.Date;
+
 public class Empleado {
 
     private long idEmpleado;
 
-    private String documento;
+    private String dni;
 
-    private String tipoDocumento;
-
-    private String nombres;
+    private String nombre;
 
     private String apellidos;
 
@@ -20,7 +20,9 @@ public class Empleado {
 
     private String direccion;
 
-    private boolean activo;
+    private boolean estado;
+
+    private Date fechaNacimiento;
 
     public long getIdEmpleado() {
         return idEmpleado;
@@ -30,28 +32,20 @@ public class Empleado {
         this.idEmpleado = idEmpleado;
     }
 
-    public String getDocumento() {
-        return documento;
+    public String getDni() {
+        return dni;
     }
 
-    public void setDocumento(String documento) {
-        this.documento = documento;
+    public void setDni(String documento) {
+        this.dni = documento;
     }
 
-    public String getTipoDocumento() {
-        return tipoDocumento;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setTipoDocumento(String tipoDocumento) {
-        this.tipoDocumento = tipoDocumento;
-    }
-
-    public String getNombres() {
-        return nombres;
-    }
-
-    public void setNombres(String nombres) {
-        this.nombres = nombres;
+    public void setNombre(String nombres) {
+        this.nombre = nombres;
     }
 
     public String getApellidos() {
@@ -92,5 +86,21 @@ public class Empleado {
 
     public void setDireccion(String direccion) {
         this.direccion = direccion;
+    }
+
+    public Date getFechaNacimiento() {
+        return fechaNacimiento;
+    }
+
+    public void setFechaNacimiento(Date fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
+    }
+
+    public boolean isEstado() {
+        return estado;
+    }
+
+    public void setEstado(boolean estado) {
+        this.estado = estado;
     }
 }

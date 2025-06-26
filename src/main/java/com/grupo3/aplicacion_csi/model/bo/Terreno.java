@@ -1,5 +1,6 @@
 package com.grupo3.aplicacion_csi.model.bo;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 public class Terreno {
@@ -10,13 +11,13 @@ public class Terreno {
 
     private long idFormaTerreno;
 
-    private double areaTotal;
+    private BigDecimal areaTotal;
 
-    private double areaUtil;
+    private BigDecimal areaUtil;
 
-    private double frenteMetros;
+    private BigDecimal frenteMetros;
 
-    private double fondoMetros;
+    private BigDecimal fondoMetros;
 
     private String zonificacion;
 
@@ -29,6 +30,8 @@ public class Terreno {
     private String coordenadas;
 
     private Date fechaAsignacion;
+
+    private boolean estado;
 
     public long getIdTerreno() {
         return idTerreno;
@@ -54,35 +57,35 @@ public class Terreno {
         this.idFormaTerreno = idFormaTerreno;
     }
 
-    public double getAreaUtil() {
+    public BigDecimal getAreaUtil() {
         return areaUtil;
     }
 
-    public void setAreaUtil(double areaUtil) {
+    public void setAreaUtil(BigDecimal areaUtil) {
         this.areaUtil = areaUtil;
     }
 
-    public double getFondoMetros() {
+    public BigDecimal getFondoMetros() {
         return fondoMetros;
     }
 
-    public void setFondoMetros(double fondoMetros) {
+    public void setFondoMetros(BigDecimal fondoMetros) {
         this.fondoMetros = fondoMetros;
     }
 
-    public double getAreaTotal() {
+    public BigDecimal getAreaTotal() {
         return areaTotal;
     }
 
-    public void setAreaTotal(double areaTotal) {
+    public void setAreaTotal(BigDecimal areaTotal) {
         this.areaTotal = areaTotal;
     }
 
-    public double getFrenteMetros() {
+    public BigDecimal getFrenteMetros() {
         return frenteMetros;
     }
 
-    public void setFrenteMetros(double frenteMetros) {
+    public void setFrenteMetros(BigDecimal frenteMetros) {
         this.frenteMetros = frenteMetros;
     }
 
@@ -132,5 +135,13 @@ public class Terreno {
 
     public void setFechaAsignacion(Date fechaAsignacion) {
         this.fechaAsignacion = fechaAsignacion;
+    }
+
+    public boolean isEstado() {
+        return estado;
+    }
+
+    public void setEstado(boolean estado) {
+        this.estado = estado;
     }
 }

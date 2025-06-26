@@ -10,7 +10,7 @@ public class TipoMaterial {
 
     private String clasificacion;
 
-    private boolean activo;
+    private boolean estado;
 
     public long getIdTipoMaterial() {
         return idTipoMaterial;
@@ -44,11 +44,11 @@ public class TipoMaterial {
         this.clasificacion = clasificacion;
     }
 
-    public boolean isActivo() {
-        return activo;
+    public boolean isEstado() {
+        return estado;
     }
 
-    public void setActivo(boolean activo) {
-        this.activo = activo;
+    public void setEstado(boolean activo) {
+        this.estado = activo;
     }
 }

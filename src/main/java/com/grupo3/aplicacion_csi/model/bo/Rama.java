@@ -14,7 +14,7 @@ public class Rama {
 
     private Date fechaAsignacion;
 
-    private boolean activo;
+    private boolean estado;
 
     public long getIdRama() {
         return idRama;
@@ -56,11 +56,11 @@ public class Rama {
         this.fechaAsignacion = fechaAsignacion;
     }
 
-    public boolean isActivo() {
-        return activo;
+    public boolean isEstado() {
+        return estado;
     }
 
-    public void setActivo(boolean activo) {
-        this.activo = activo;
+    public void setEstado(boolean activo) {
+        this.estado = activo;
     }
 }

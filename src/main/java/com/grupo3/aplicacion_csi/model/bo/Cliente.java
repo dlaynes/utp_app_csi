@@ -4,13 +4,9 @@ public class Cliente {
 
     private long idCliente;
 
-    private String documento;
+    private String dni;
 
-    private String tipoDocumento;
-
-    private String nombres;
-
-    private String apellidos;
+    private String nombreCompleto;
 
     private String telefono;
 
@@ -22,7 +18,7 @@ public class Cliente {
 
     private String correo;
 
-    private boolean activo;
+    private boolean estado;
 
     public long getIdCliente() {
         return idCliente;
@@ -32,36 +28,20 @@ public class Cliente {
         this.idCliente = idCliente;
     }
 
-    public String getDocumento() {
-        return documento;
+    public String getDni() {
+        return dni;
     }
 
-    public void setDocumento(String documento) {
-        this.documento = documento;
+    public void setDni(String documento) {
+        this.dni = documento;
     }
 
-    public String getTipoDocumento() {
-        return tipoDocumento;
+    public String getNombreCompleto() {
+        return nombreCompleto;
     }
 
-    public void setTipoDocumento(String tipoDocumento) {
-        this.tipoDocumento = tipoDocumento;
-    }
-
-    public String getNombres() {
-        return nombres;
-    }
-
-    public void setNombres(String nombres) {
-        this.nombres = nombres;
-    }
-
-    public String getApellidos() {
-        return apellidos;
-    }
-
-    public void setApellidos(String apellidos) {
-        this.apellidos = apellidos;
+    public void setNombreCompleto(String nombres) {
+        this.nombreCompleto = nombres;
     }
 
     public String getTelefono() {
@@ -104,11 +84,11 @@ public class Cliente {
         this.nombreComercial = nombreComercial;
     }
 
-    public boolean isActivo() {
-        return activo;
+    public boolean isEstado() {
+        return estado;
     }
 
-    public void setActivo(boolean activo) {
-        this.activo = activo;
+    public void setEstado(boolean activo) {
+        this.estado = activo;
     }
 }

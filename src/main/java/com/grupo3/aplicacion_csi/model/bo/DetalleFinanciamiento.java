@@ -1,5 +1,6 @@
 package com.grupo3.aplicacion_csi.model.bo;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 public class DetalleFinanciamiento {
@@ -12,11 +13,11 @@ public class DetalleFinanciamiento {
 
     private long idPresupuestoTrabajador;
 
-    private double monto;
+    private BigDecimal monto;
 
     private Date fechaPago;
 
-    private boolean activo;
+    private boolean estado;
 
     public long getIdDetalleFinanciamiento() {
         return idDetalleFinanciamiento;
@@ -50,11 +51,11 @@ public class DetalleFinanciamiento {
         this.idPresupuestoTrabajador = idPresupuestoTrabajador;
     }
 
-    public double getMonto() {
+    public BigDecimal getMonto() {
         return monto;
     }
 
-    public void setMonto(double monto) {
+    public void setMonto(BigDecimal monto) {
         this.monto = monto;
     }
 
@@ -66,11 +67,11 @@ public class DetalleFinanciamiento {
         this.fechaPago = fechaPago;
     }
 
-    public boolean isActivo() {
-        return activo;
+    public boolean isEstado() {
+        return estado;
     }
 
-    public void setActivo(boolean activo) {
-        this.activo = activo;
+    public void setEstado(boolean estado) {
+        this.estado = estado;
     }
 }

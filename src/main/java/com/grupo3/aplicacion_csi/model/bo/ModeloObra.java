@@ -1,12 +1,14 @@
 package com.grupo3.aplicacion_csi.model.bo;
 
+import java.math.BigDecimal;
+
 public class ModeloObra {
 
     private long idModeloObra;
 
     private long idTipoObra;
 
-    private String urlModelo3d;
+    private String urModelo3d;
 
     private String nombre;
 
@@ -18,13 +20,13 @@ public class ModeloObra {
 
     private int ambientes;
 
-    private double areaTotal;
+    private BigDecimal areaTotal;
 
     private int capacidadPersonas;
 
-    private double precioPreferencial;
+    private BigDecimal precioPreferencial;
 
-    private double activo;
+    private boolean estado;
 
     public long getIdModeloObra() {
         return idModeloObra;
@@ -42,12 +44,12 @@ public class ModeloObra {
         this.idTipoObra = idTipoObra;
     }
 
-    public String getUrlModelo3d() {
-        return urlModelo3d;
+    public String getUrModelo3d() {
+        return urModelo3d;
     }
 
-    public void setUrlModelo3d(String urlModelo3d) {
-        this.urlModelo3d = urlModelo3d;
+    public void setUrModelo3d(String urModelo3d) {
+        this.urModelo3d = urModelo3d;
     }
 
     public String getNombre() {
@@ -90,11 +92,11 @@ public class ModeloObra {
         this.ambientes = ambientes;
     }
 
-    public double getAreaTotal() {
+    public BigDecimal getAreaTotal() {
         return areaTotal;
     }
 
-    public void setAreaTotal(double areaTotal) {
+    public void setAreaTotal(BigDecimal areaTotal) {
         this.areaTotal = areaTotal;
     }
 
@@ -106,19 +108,19 @@ public class ModeloObra {
         this.capacidadPersonas = capacidadPersonas;
     }
 
-    public double getActivo() {
-        return activo;
+    public boolean getEstado() {
+        return estado;
     }
 
-    public void setActivo(double activo) {
-        this.activo = activo;
+    public void setEstado(boolean activo) {
+        this.estado = activo;
     }
 
-    public double getPrecioPreferencial() {
+    public BigDecimal getPrecioPreferencial() {
         return precioPreferencial;
     }
 
-    public void setPrecioPreferencial(double precioPreferencial) {
+    public void setPrecioPreferencial(BigDecimal precioPreferencial) {
         this.precioPreferencial = precioPreferencial;
     }
 }

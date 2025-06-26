@@ -12,7 +12,7 @@ public class PresupuestoMaterial {
 
     private String observaciones;
 
-    private boolean activo;
+    private boolean estado;
 
     public long getIdPresupuestoMaterial() {
         return idPresupuestoMaterial;
@@ -46,11 +46,11 @@ public class PresupuestoMaterial {
         this.observaciones = observaciones;
     }
 
-    public boolean isActivo() {
-        return activo;
+    public boolean isEstado() {
+        return estado;
     }
 
-    public void setActivo(boolean activo) {
-        this.activo = activo;
+    public void setEstado(boolean estado) {
+        this.estado = estado;
     }
 }

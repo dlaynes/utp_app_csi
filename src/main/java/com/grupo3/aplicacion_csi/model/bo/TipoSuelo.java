@@ -8,7 +8,7 @@ public class TipoSuelo {
 
     private String descripcion;
 
-    private boolean activo;
+    private boolean estado;
 
     public long getIdTipoSuelo() {
         return idTipoSuelo;
@@ -34,11 +34,11 @@ public class TipoSuelo {
         this.descripcion = descripcion;
     }
 
-    public boolean isActivo() {
-        return activo;
+    public boolean isEstado() {
+        return estado;
     }
 
-    public void setActivo(boolean activo) {
-        this.activo = activo;
+    public void setEstado(boolean estado) {
+        this.estado = estado;
     }
 }

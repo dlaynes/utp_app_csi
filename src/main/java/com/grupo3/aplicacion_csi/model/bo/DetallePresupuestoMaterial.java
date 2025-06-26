@@ -1,5 +1,6 @@
 package com.grupo3.aplicacion_csi.model.bo;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 public class DetallePresupuestoMaterial {
@@ -12,13 +13,13 @@ public class DetallePresupuestoMaterial {
 
     private int stockUsado;
 
-    private double precioUnitario;
+    private BigDecimal precioUnitario;
 
-    private double total;
+    private BigDecimal total;
 
     private Date fechaAsignacion;
 
-    private boolean activo;
+    private boolean estado;
 
     public long getIdDetallePresupuesto() {
         return idDetallePresupuesto;
@@ -44,11 +45,11 @@ public class DetallePresupuestoMaterial {
         this.idMaterial = idMaterial;
     }
 
-    public double getPrecioUnitario() {
+    public BigDecimal getPrecioUnitario() {
         return precioUnitario;
     }
 
-    public void setPrecioUnitario(double precioUnitario) {
+    public void setPrecioUnitario(BigDecimal precioUnitario) {
         this.precioUnitario = precioUnitario;
     }
 
@@ -60,11 +61,11 @@ public class DetallePresupuestoMaterial {
         this.stockUsado = stockUsado;
     }
 
-    public double getTotal() {
+    public BigDecimal getTotal() {
         return total;
     }
 
-    public void setTotal(double total) {
+    public void setTotal(BigDecimal total) {
         this.total = total;
     }
 
@@ -76,11 +77,11 @@ public class DetallePresupuestoMaterial {
         this.fechaAsignacion = fechaAsignacion;
     }
 
-    public boolean isActivo() {
-        return activo;
+    public boolean isEstado() {
+        return estado;
     }
 
-    public void setActivo(boolean activo) {
-        this.activo = activo;
+    public void setEstado(boolean estado) {
+        this.estado = estado;
     }
 }

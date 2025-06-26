@@ -1,5 +1,6 @@
 package com.grupo3.aplicacion_csi.model.bo;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 public class Financiamiento {
@@ -12,17 +13,17 @@ public class Financiamiento {
 
     private String codigoFinanciamiento;
 
-    private double subTotal;
+    private BigDecimal subTotal;
 
-    private double igv;
+    private BigDecimal igv;
 
-    private double total;
+    private BigDecimal total;
 
     private Date fechaFinanciamiento;
 
     private String formaPago;
 
-    private boolean activo;
+    private boolean estado;
 
     public long getIdFinanciamiento() {
         return idFinanciamiento;
@@ -40,11 +41,11 @@ public class Financiamiento {
         this.idTipoFinanciamiento = idTipoFinanciamiento;
     }
 
-    public double getSubTotal() {
+    public BigDecimal getSubTotal() {
         return subTotal;
     }
 
-    public void setSubTotal(double subTotal) {
+    public void setSubTotal(BigDecimal subTotal) {
         this.subTotal = subTotal;
     }
 
@@ -64,19 +65,19 @@ public class Financiamiento {
         this.codigoFinanciamiento = codigoFinanciamiento;
     }
 
-    public double getIgv() {
+    public BigDecimal getIgv() {
         return igv;
     }
 
-    public void setIgv(double igv) {
+    public void setIgv(BigDecimal igv) {
         this.igv = igv;
     }
 
-    public double getTotal() {
+    public BigDecimal getTotal() {
         return total;
     }
 
-    public void setTotal(double total) {
+    public void setTotal(BigDecimal total) {
         this.total = total;
     }
 
@@ -96,11 +97,11 @@ public class Financiamiento {
         this.formaPago = formaPago;
     }
 
-    public boolean isActivo() {
-        return activo;
+    public boolean isEstado() {
+        return estado;
     }
 
-    public void setActivo(boolean activo) {
-        this.activo = activo;
+    public void setEstado(boolean activo) {
+        this.estado = activo;
     }
 }

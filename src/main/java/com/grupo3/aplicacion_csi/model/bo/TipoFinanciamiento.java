@@ -8,7 +8,7 @@ public class TipoFinanciamiento {
 
     private String descripcion;
 
-    private boolean activo;
+    private boolean estado;
 
     public long getIdTipoFinanciamiento() {
         return idTipoFinanciamiento;
@@ -34,11 +34,11 @@ public class TipoFinanciamiento {
         this.descripcion = descripcion;
     }
 
-    public boolean isActivo() {
-        return activo;
+    public boolean isEstado() {
+        return estado;
     }
 
-    public void setActivo(boolean activo) {
-        this.activo = activo;
+    public void setEstado(boolean activo) {
+        this.estado = activo;
     }
 }

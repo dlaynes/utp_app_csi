@@ -22,7 +22,7 @@ public class Obra {
 
     private String nombre;
 
-    private boolean activo;
+    private boolean estado;
 
     public long getIdObra() {
         return idObra;
@@ -96,11 +96,11 @@ public class Obra {
         this.nombre = nombre;
     }
 
-    public boolean isActivo() {
-        return activo;
+    public boolean isEstado() {
+        return estado;
     }
 
-    public void setActivo(boolean activo) {
-        this.activo = activo;
+    public void setEstado(boolean activo) {
+        this.estado = activo;
     }
 }

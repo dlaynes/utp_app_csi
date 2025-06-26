@@ -1,5 +1,7 @@
 package com.grupo3.aplicacion_csi.model.bo;
 
+import java.math.BigDecimal;
+
 public class Material {
 
     private long idMaterial;
@@ -8,19 +10,19 @@ public class Material {
 
     private String nombre;
 
-    private double precioUnitario;
+    private BigDecimal precioUnitario;
 
     private int stockActual;
 
-    private int masaEspecifica;
+    private BigDecimal masaEspecifica;
 
-    private double longitud;
+    private BigDecimal longitud;
 
-    private double temperaturaTermodinamica;
+    private BigDecimal temperaturaTermodinamica;
 
     private String descripcion;
 
-    private boolean activo;
+    private boolean estado;
 
     public long getIdMaterial() {
         return idMaterial;
@@ -46,11 +48,11 @@ public class Material {
         this.nombre = nombre;
     }
 
-    public double getPrecioUnitario() {
+    public BigDecimal getPrecioUnitario() {
         return precioUnitario;
     }
 
-    public void setPrecioUnitario(double precioUnitario) {
+    public void setPrecioUnitario(BigDecimal precioUnitario) {
         this.precioUnitario = precioUnitario;
     }
 
@@ -62,27 +64,27 @@ public class Material {
         this.stockActual = stockActual;
     }
 
-    public int getMasaEspecifica() {
+    public BigDecimal getMasaEspecifica() {
         return masaEspecifica;
     }
 
-    public void setMasaEspecifica(int masaEspecifica) {
+    public void setMasaEspecifica(BigDecimal masaEspecifica) {
         this.masaEspecifica = masaEspecifica;
     }
 
-    public double getLongitud() {
+    public BigDecimal getLongitud() {
         return longitud;
     }
 
-    public void setLongitud(double longitud) {
+    public void setLongitud(BigDecimal longitud) {
         this.longitud = longitud;
     }
 
-    public double getTemperaturaTermodinamica() {
+    public BigDecimal getTemperaturaTermodinamica() {
         return temperaturaTermodinamica;
     }
 
-    public void setTemperaturaTermodinamica(double temperaturaTermodinamica) {
+    public void setTemperaturaTermodinamica(BigDecimal temperaturaTermodinamica) {
         this.temperaturaTermodinamica = temperaturaTermodinamica;
     }
 
@@ -94,11 +96,11 @@ public class Material {
         this.descripcion = descripcion;
     }
 
-    public boolean isActivo() {
-        return activo;
+    public boolean isEstado() {
+        return estado;
     }
 
-    public void setActivo(boolean activo) {
-        this.activo = activo;
+    public void setEstado(boolean activo) {
+        this.estado = activo;
     }
 }

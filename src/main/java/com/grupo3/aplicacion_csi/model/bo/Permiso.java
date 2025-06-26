@@ -12,7 +12,7 @@ public class Permiso {
 
     private Date fechaAsignacion;
 
-    private boolean activo;
+    private boolean estado;
 
     public long getIdPermiso() {
         return idPermiso;
@@ -46,11 +46,11 @@ public class Permiso {
         this.fechaAsignacion = fechaAsignacion;
     }
 
-    public boolean isActivo() {
-        return activo;
+    public boolean isEstado() {
+        return estado;
     }
 
-    public void setActivo(boolean activo) {
-        this.activo = activo;
+    public void setEstado(boolean estado) {
+        this.estado = estado;
     }
 }
